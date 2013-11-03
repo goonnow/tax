@@ -1,5 +1,6 @@
 'use strict';
 
+/*global app */
 app.controller('MainCtrl', function ($scope) {
 
     $scope.income =0;
@@ -7,5 +8,5 @@ app.controller('MainCtrl', function ($scope) {
 
     $scope.diff = function(){
         return $scope.income - $scope.deduction;
-    }
+    };
 });

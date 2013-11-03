@@ -1,5 +1,6 @@
 'use strict';
 
+/*global app */
 app.directive('box', function() {
     return {
         templateUrl: 'views/box.html',
@@ -10,6 +11,7 @@ app.directive('box', function() {
             classModifier: '@',
             value: '='
         },
+        /*global BoxCtrl */
         controller: BoxCtrl
     };
 });

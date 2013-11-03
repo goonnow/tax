@@ -1,3 +1,4 @@
+'use strict';
 // REF : http://hilight.kapook.com/view/79758
 var taxLevels = [
     {
@@ -53,10 +54,10 @@ function TAX(netIncome) {
     }
 
     // Calcurate
-    for ( var i = maxLevel; i > 0; i-- ) {
-        var diff  = netIncome - taxLevels[i-1].max;
+    for ( var j = maxLevel; j > 0; j-- ) {
+        var diff  = netIncome - taxLevels[j-1].max;
 
-        res.total += ( diff * taxLevels[i].tax );
+        res.total += ( diff * taxLevels[j].tax );
 
         netIncome -= diff;
     }

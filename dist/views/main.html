@@ -1,41 +1,12 @@
 <div>
-    <div class="box left" ng-controller="IncomeCtrl">
-        <h3>Income</h3>
+    <box title="income" class-modifier="left" value="income"></box>
 
-        <div ng-repeat="i in list">
-            <element data="i"></element>
-        </div>
-
-        <button type="button" class="btn btn-default" ng-click="addRecord()">
-            <i class="fa fa-plus"></i>
-        </button>
-
-        <div class="clearfix">
-        </div>
-
-        <h2 class="total">{{sum()}}</h2>
-    </div>
-
-    <div class="box right" ng-controller="DeductionCtrl">
-        <h3>Deduction</h3>
-        <div ng-repeat="i in list">
-            <element data="i"></element>
-        </div>
-
-        <button type="button" class="btn btn-default" ng-click="addRecord()">
-            <i class="fa fa-plus"></i>
-        </button>
-
-        <div class="clearfix">
-        </div>
-
-        <h2 class="total">{{sum()}}</h2>
-    </div>
+    <box title="deduction" class-modifier="right" value="deduction"></box>
 </div>
 
 <div class="summary">
     <span>Net Income</span>
-    <span class="number">20000</span>
+    <span class="number" ng-bind="diff()"></span>
 </div>
 
 

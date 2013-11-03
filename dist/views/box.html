@@ -1,0 +1,20 @@
+<div class="box {{ classModifier }}">
+    <h3 class="title" ng-bind="title"></h3>
+
+    <div ng-repeat="i in list">
+        <element data="i"></element>
+    </div>
+
+    <div class="box__types">
+        <select ng-model="selected" ng-options="c.desc for c in types"></select>
+
+        <button type="button" class="btn btn-default" ng-click="addRecord()">
+            <i class="fa fa-plus"></i>
+        </button>
+    </div>
+
+    <div class="clearfix">
+    </div>
+
+    <h2 class="total" ng-bind="sum()"></h2>
+</div>

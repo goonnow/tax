@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('taxApp').directive('element', function() {
+app.directive('element', function() {
     return {
         templateUrl: 'views/element.html',
         restrict: 'E',

@@ -1,10 +1,11 @@
 'use strict';
 
-angular.module('taxApp', [
+var app = angular.module('taxApp', [
   'ngCookies',
   'ngResource'
-])
-  .config(function ($routeProvider) {
+]);
+
+app.config(function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
@@ -13,4 +14,4 @@ angular.module('taxApp', [
       .otherwise({
         redirectTo: '/'
       });
-  });
+});

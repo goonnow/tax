@@ -1,7 +1,6 @@
 'use strict';
 
-angular.module('taxApp')
-  .controller('IncomeCtrl', function ($scope) {
+app.controller('IncomeCtrl', function ($scope) {
     $scope.list = [
         {
             desc: 'Salary',
@@ -26,4 +25,4 @@ angular.module('taxApp')
 
         return sum;
     };
-  });
+});

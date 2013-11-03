@@ -12,6 +12,6 @@ app.directive('box', function() {
             value: '='
         },
         /*global BoxCtrl */
-        controller: BoxCtrl
+        controller: 'BoxCtrl'
     };
 });

@@ -1,6 +1,7 @@
 'use strict';
 
-function BoxCtrl( $scope, $attrs ) {
+/*global app */
+app.controller('BoxCtrl', function ($scope, $attrs) {
     init();
 
     $scope.addRecord = function() {
@@ -35,4 +36,4 @@ function BoxCtrl( $scope, $attrs ) {
         $scope.selected = types[predefined];
 
     }
-}
+});

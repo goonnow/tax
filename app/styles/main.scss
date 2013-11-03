@@ -28,7 +28,8 @@ body {
         margin-left: 0.5%;
     }
 
-    h3 {
+    h3.title {
+        text-transform: capitalize;
         background: yellow;
         text-align: center;
     }
@@ -36,6 +37,17 @@ body {
     h2.total {
         text-align: right;
         border-top: 1px solid gray;
+    }
+
+    .box__types {
+        input {
+            margin-bottom: 0px;
+        }
+
+        button {
+            float: right;
+        }
+
     }
 }
 

@@ -1,4 +1,4 @@
-<div class="box {{ classModifier }}" ng-controller="IncomeCtrl">
+<div class="box {{ classModifier }}">
     <h3 class="title" ng-bind="title"></h3>
 
     <div ng-repeat="i in list">
@@ -16,6 +16,6 @@
     <div class="clearfix">
     </div>
 
-    <h2 class="total">{{sum()}}</h2>
+    <h2 class="total" ng-bind="sum()"></h2>
 </div>
 

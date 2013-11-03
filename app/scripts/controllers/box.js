@@ -1,8 +1,5 @@
 'use strict';
 
-app.controller('IncomeCtrl', function ($scope) {
-});
-
 function BoxCtrl( $scope, $attrs ) {
     init();
 
@@ -18,6 +15,7 @@ function BoxCtrl( $scope, $attrs ) {
             }
         });
 
+        $scope.value = sum || 0;
         return sum;
     };
 

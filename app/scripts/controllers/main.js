@@ -5,4 +5,11 @@ app.controller('MainCtrl', function ($scope) {
       'AngularJS',
       'Karma'
     ];
+
+    $scope.income =0;
+    $scope.deduction =0;
+
+    $scope.diff = function(){
+        return $scope.income - $scope.deduction;
+    }
 });

@@ -1,12 +1,12 @@
 <div>
-    <box title="income" class-modifier="left"></box>
+    <box title="income" class-modifier="left" value="income"></box>
 
-    <box title="deduction" class-modifier="right"></box>
+    <box title="deduction" class-modifier="right" value="deduction"></box>
 </div>
 
 <div class="summary">
     <span>Net Income</span>
-    <span class="number">20000</span>
+    <span class="number" ng-bind="diff()"></span>
 </div>
 
 

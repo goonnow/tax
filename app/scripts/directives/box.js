@@ -8,6 +8,7 @@ app.directive('box', function() {
         scope: {
             title: '@',
             classModifier: '@',
+            value: '='
         },
         controller: BoxCtrl
     };

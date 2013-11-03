@@ -24,9 +24,17 @@ function BoxCtrl( $scope, $attrs ) {
     function init() {
         var types = window.types[$attrs.title];
 
-        $scope.list = [ types[0] ];
+        $scope.list = [];
+        var predefined = 0;
+        angular.forEach( types, function(data, key){
+            if( data.predefined ) {
+                $scope.list.push( data );
+                predefined++;
+            }
+        });
+
         $scope.types = types;
-        $scope.selected = types[1];
+        $scope.selected = types[predefined];
 
     }
 }

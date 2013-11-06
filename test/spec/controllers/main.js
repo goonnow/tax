@@ -21,11 +21,4 @@ describe('Controller: MainCtrl', function () {
     expect(scope.deduction).toBe(0);
   });
 
-  it('diff', function () {
-      scope.income = 5;
-      scope.deduction = 100;
-
-    expect(scope.diff()).toBe(-95);
-  });
-
 });

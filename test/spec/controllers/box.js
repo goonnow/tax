@@ -2,7 +2,7 @@
 
 describe('Controller: BoxCtrl', function () {
 
-    var title = 'income';
+    var key = 'income';
 
   // load the controller's module
   beforeEach(module('taxApp'));
@@ -15,13 +15,13 @@ describe('Controller: BoxCtrl', function () {
     scope = $rootScope.$new();
     BoxCtrl = $controller('BoxCtrl', {
       $scope: scope,
-      $attrs: { title: title }
+      $attrs: { key: key }
     });
   }));
 
 
   it('initialize variable', function () {
-    expect( scope.types ).toEqual( window.types[title] );
+    expect( scope.types ).toEqual( window.types[key] );
   });
 
   it('sum', function () {

@@ -6,12 +6,12 @@
 
 <div class="summary">
     <span>Net Income</span>
-    <span class="number" ng-bind="diff"></span>
+    <span class="number" ng-bind="diff | number:2"></span>
 </div>
 
 
 <div class="summary">
     <span>Tax</span>
-    <span class="number" ng-bind="tax.total"></span>
+    <span class="number" ng-bind="tax.total | number:2"></span>
 </div>
 

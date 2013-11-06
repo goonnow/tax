@@ -9,6 +9,10 @@ window.types = {
             desc: 'Bonus',
             placeholder: '12000',
             predefined: true
+        },
+        {
+            desc: ' Dividend',
+            placeholder: '5000'
         }
     ],
     'deduction': [

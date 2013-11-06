@@ -15,7 +15,7 @@ app.controller('MainCtrl', function ($scope) {
     });
 
     function updateData() {
-        $scope.diff = $scope.income - $scope.deduction;
+        $scope.diff = Math.max(0,$scope.income - $scope.deduction);
         $scope.tax = TAX($scope.diff);
     }
 

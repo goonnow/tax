@@ -23,7 +23,7 @@ window.types = {
       },
       {
           desc: 'ค่าลดหย่อนส่วนตัว',
-          placeholder: '30000',
+          value: '30000',
           predefined: true
       },
       {

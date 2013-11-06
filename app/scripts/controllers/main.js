@@ -1,6 +1,7 @@
 'use strict';
 
 /*global app */
+/*global TAX */
 app.controller('MainCtrl', function ($scope) {
 
     $scope.income =0;

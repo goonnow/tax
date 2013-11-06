@@ -7,6 +7,7 @@ app.directive('box', function() {
         restrict: 'E',
         replace: true,
         scope: {
+            key: '@',
             title: '@',
             classModifier: '@',
             value: '=',

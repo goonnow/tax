@@ -21,7 +21,7 @@ app.controller('BoxCtrl', function ($scope, $attrs) {
     };
 
     function init() {
-        var types = window.types[$attrs.title];
+        var types = window.types[$attrs.key];
 
         $scope.list = [];
         var predefined = 0;

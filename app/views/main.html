@@ -1,17 +1,17 @@
 <div>
-    <box title="income" class-modifier="left" value="income"></box>
+    <box key="income" title="รายได้" class-modifier="left" value="income"></box>
 
-    <box title="deduction" value-prefix="-" class-modifier="right" value="deduction"></box>
+    <box key="deduction" title="ค่าใช้จ่าย/ค่าลดหย่อน" value-prefix="-" class-modifier="right" value="deduction"></box>
 </div>
 
 <div class="summary">
-    <span>Net Income</span>
+    <span>รายได้สุทธิ</span>
     <span class="number" ng-bind="diff | number:2"></span>
 </div>
 
 
 <div class="summary">
-    <span>Tax</span>
+    <span>ภาษี</span>
     <span class="number" ng-bind="tax.total | number:2"></span>
 </div>
 

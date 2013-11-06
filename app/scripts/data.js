@@ -1,33 +1,37 @@
 window.types = {
     'income': [
         {
-            desc: 'Salary',
+            desc: 'เงินเดือนทั้งปี',
             placeholder: '120000',
             predefined: true
         },
         {
-            desc: 'Bonus',
+            desc: 'โบนัส',
             placeholder: '12000',
             predefined: true
         },
         {
-            desc: ' Dividend',
+            desc: 'ปันผล',
             placeholder: '5000'
         }
     ],
     'deduction': [
       {
-          desc: 'Expense',
+          desc: 'ค่าใช้จ่าย',
           placeholder: '60000',
           predefined: true
       },
       {
-          desc: 'Personal Deduction',
+          desc: 'ค่าลดหย่อนส่วนตัว',
           placeholder: '30000',
           predefined: true
       },
       {
-          desc: 'LTF / RTF',
+          desc: 'LTF ',
+          placeholder: '5000'
+      },
+      {
+          desc: 'RTF',
           placeholder: '5000'
       }
     ]

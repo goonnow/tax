@@ -9,7 +9,8 @@ app.directive('box', function() {
         scope: {
             title: '@',
             classModifier: '@',
-            value: '='
+            value: '=',
+            valuePrefix: '@'
         },
         /*global BoxCtrl */
         controller: 'BoxCtrl'

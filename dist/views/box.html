@@ -16,5 +16,8 @@
     <div class="clearfix">
     </div>
 
-    <h2 class="total" ng-bind="sum()"></h2>
+    <h2 class="total">
+        <span ng-bind="valuePrefix"></span>
+        <span ng-bind="sum() | number:2"></span>
+    </h2>
 </div>

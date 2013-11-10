@@ -1,5 +1,13 @@
 <div class="element">
     <span class="element__description" ng-bind="data.desc"></span>
+
+    <div class="checkbox" ng-show="data.modifier">
+        <label>
+            <input type="checkbox" ng-change="modifier()" ng-model="enableModifer"/>
+            {{data.modifier.title}}
+        </label>
+    </div>
+
     <input class="element__value" ng-hide="data.autoCal" type="text"  placeholder="{{data.placeholder}}" ng-model="data.value">
     <span class="element__value" ng-show="data.autoCal" ng-bind="data.value | number:2"></span>
     <div class="clearfix"></div>

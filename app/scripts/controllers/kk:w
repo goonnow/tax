@@ -13,8 +13,9 @@ app.controller('ElementCtrl', function ( $scope, $rootScope ) {
 
     var defaultValue = $scope.data.value;
     $scope.modifier = function(){
-        if( $scope.enableModifer ) {
+        if( $scope.enableModifier ) {
             $scope.data.value = $scope.data.value + $scope.data.modifier.value;
+        console.log($scope.data.modifier );
         } else {
             $scope.data.value = defaultValue;
 

@@ -61,10 +61,14 @@ body {
     }
 
     // Overide boostrap css
-    input, .element__value {
+    .element__value {
         float: right;
         text-align: right;
         margin-bottom: 0px;
+    }
+
+    .checkbox {
+        padding-left: 50px;
     }
 
 

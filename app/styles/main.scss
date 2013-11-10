@@ -61,11 +61,13 @@ body {
     }
 
     // Overide boostrap css
-    input {
+    input, .element__value {
         float: right;
         text-align: right;
         margin-bottom: 0px;
     }
+
+
 
 }
 

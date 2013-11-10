@@ -2,12 +2,13 @@
 
 /*global app */
 /*global TAX */
-app.controller('MainCtrl', function ($scope) {
+app.controller('MainCtrl', function ($scope, $rootScope) {
 
-    $scope.income =0;
-    $scope.deduction =0;
+    $rootScope.income= 0;
+    $rootScope.decution= 0;
 
     $scope.$watch( 'income', function(){
+        $scope.$broadcast('income-changed', $scope.income );
         updateData();
     });
 

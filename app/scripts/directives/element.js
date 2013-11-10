@@ -8,6 +8,7 @@ app.directive('element', function() {
         replace: true,
         scope: {
             data: '='
-        }
+        },
+        controller: 'ElementCtrl'
     };
 });

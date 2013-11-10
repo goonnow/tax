@@ -1,5 +1,6 @@
 <div class="element">
     <span class="element__description" ng-bind="data.desc"></span>
-    <input type="text"  placeholder="{{data.placeholder}}" ng-model="data.value">
+    <input class="element__value" ng-hide="data.autoCal" type="text"  placeholder="{{data.placeholder}}" ng-model="data.value">
+    <span class="element__value" ng-show="data.autoCal" ng-bind="data.value | number:2"></span>
     <div class="clearfix"></div>
 </div>

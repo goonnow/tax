@@ -7,10 +7,8 @@ var app = angular.module('taxApp', [
 
 app.config(function ($routeProvider) {
     $routeProvider
-      .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
-      })
+      .when('/', steps[0] )
+      .when('/step/:id', steps[1] )
       .otherwise({
         redirectTo: '/'
       });

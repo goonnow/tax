@@ -1,24 +1,46 @@
-<div>
-    Personal Deduction <input type="text" placeholder="30000">
-</div>
-<div>
-    Couple <input type="text" placeholder="30000">
-    <div>
-        <input type="checkbox"> Disabled?
+<form class="form-horizontal">
+    <div class="control-group">
+        <label class="control-label">Personal Deduction</label>
+        <div class="controls">
+            <input type="text" placeholder="300000" disabled>
+        </div>
     </div>
-</div>
-<div>
-    Children
-    <select>
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-    </select>
-    Studying
-    <select>
-        <option>1</option>
-        <option>2</option>
-    </select>
-</div>
 
+    <div class="control-group">
+        <label class="control-label">Couple</label>
+        <div class="controls">
+            <label class="checkbox">
+                <input type="checkbox"> Get a divorce ?
+            </label>
+            <label class="checkbox">
+                <input type="checkbox"> Disabled ?
+            </label>
+            <label class="checkbox">
+                <input type="checkbox"> Die ?
+            </label>
+        </div>
+    </div>
+
+    <div class="control-group">
+        <label class="control-label">Children</label>
+        <div class="controls">
+            <select>
+                <option>No</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="control-group">
+        <label class="control-label">Studying Children</label>
+        <div class="controls">
+            <select>
+                <option>1</option>
+                <option>2</option>
+            </select>
+        </div>
+    </div>
+</form>

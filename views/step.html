@@ -1,0 +1,9 @@
+<h1 ng-bind="name"></h1>
+<div ng-include="" src="templateUrl"></div>
+
+<a href="#/step/{{id-1}}" ng-show="id > 0">
+    <button class="btn btn-large btn-primary" type="button">Prev</button>
+</a>
+<a href="#/step/{{id+1}}" ng-show="id < 7">
+    <button class="btn btn-large btn-primary pull-right" type="button">Next</button>
+</a>

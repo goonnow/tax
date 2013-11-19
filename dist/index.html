@@ -12,7 +12,7 @@
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <link rel="stylesheet" href="styles/bfe737e2.main.css">
+        <link rel="stylesheet" href="styles/5f5060d8.main.css">
 </head>
   <body ng-app="taxApp">
     <!--[if lt IE 7]>
@@ -23,6 +23,17 @@
       <script src="bower_components/es5-shim/es5-shim.js"></script>
       <script src="bower_components/json3/lib/json3.min.js"></script>
     <![endif]-->
+    <div class="container">
+        <ul class="navigation-bar container" ng-controller="NavigationCtrl">
+            <li ng-repeat="s in steps" ng-class="{ active : shouldSelect($index)}">
+                <a class="number-bullet" href="#/step/{{$index}}">
+                    {{$index+1}}
+                </a>
+                <div class="line">
+                </div>
+            </li>
+        </ul>
+    </div>
 
     <!-- Add your site or application content here -->
     <div class="container" ng-view=""></div>
@@ -45,6 +56,6 @@
 
         <script src="scripts/7ccb19a6.modules.js"></script>
 
-        <script src="scripts/fafe0651.scripts.js"></script>
+        <script src="scripts/587295e0.scripts.js"></script>
 </body>
 </html>

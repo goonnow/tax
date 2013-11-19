@@ -25,6 +25,17 @@
       <script src="bower_components/es5-shim/es5-shim.js"></script>
       <script src="bower_components/json3/lib/json3.min.js"></script>
     <![endif]-->
+    <div class="container">
+        <ul class="navigation-bar container" ng-controller="NavigationCtrl">
+            <li ng-repeat="s in steps" ng-class="{ active : shouldSelect($index)}">
+                <a class="number-bullet" href="#/step/{{$index}}">
+                    {{$index+1}}
+                </a>
+                <div class="line">
+                </div>
+            </li>
+        </ul>
+    </div>
 
     <!-- Add your site or application content here -->
     <div class="container" ng-view=""></div>
@@ -69,6 +80,7 @@
         <script src="scripts/app.js"></script>
         <script src="scripts/steps.js"></script>
         <script src="scripts/controllers/step.js"></script>
+        <script src="scripts/controllers/navigation.js"></script>
         <!-- endbuild -->
 </body>
 </html>

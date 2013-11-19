@@ -89,3 +89,62 @@ body {
     }
 
 }
+
+.navigation-bar {
+    list-style: none;
+    margin-top: 20px;
+    text-align: center;
+
+    li {
+        $padding-left: 10.28%;
+        $color: #DCDCDC;
+        $focus-color: #C0C0C0;
+
+        display: inline-block;
+        padding-left: $padding-left;
+        position: relative;
+
+        .number-bullet {
+            position: relative;
+            display: block;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px; 
+            background: $color;
+            line-height: 30px;
+            text-align: center;
+            z-index: 1000;
+            color: black;
+        }
+
+        .line {
+            background: $color;
+            position: absolute;
+            float: left;
+            left: 0px;
+            top: 12.5px;
+            height: 5px;
+            width: 100%;
+            z-index: 500;
+        }
+
+        &:first-child {
+            padding-left: 0px;
+
+            .line {
+                display: none;
+            }
+        }
+
+        &.active {
+            .number-bullet {
+                background: $focus-color;
+            }
+
+            .line {
+                background: $focus-color;
+            }
+        }
+    }
+
+}

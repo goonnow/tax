@@ -17,4 +17,5 @@ app.config(function ($routeProvider ) {
 
 app.run(function($rootScope) {
     $rootScope.items = window.items;
+    $rootScope.steps = steps;
 });

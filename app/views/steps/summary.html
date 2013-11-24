@@ -1,8 +1,8 @@
-<table class="table table-bordered" ng-controller="SummaryCtrl">
+<table class="summary-table table table-bordered" ng-controller="SummaryCtrl">
     <thead>
         <tr>
             <th>Items</th>
-            <th>Baht/Year</th>
+            <th>Baht</th>
         </tr>
     </thead>
     <tbody>
@@ -14,7 +14,7 @@
             <td ng-bind="items.bonus.desc"></td>
             <td ng-bind="items.bonus.value"></td>
         </tr>
-        <tr>
+        <tr class="sum-row">
             <td>Total Income</td>
             <td ng-bind="totalIncome"></td>
         </tr>
@@ -30,15 +30,15 @@
             <td>LTF</td>
             <td ng-bind="items.LTF.value"></td>
         </tr>
-        <tr>
+        <tr class="sum-row">
             <td>Total Deduction</td>
             <td ng-bind="totalDeduction"></td>
         </tr>
-        <tr>
+        <tr class="sum-row">
             <td>Net Income</td>
             <td ng-bind="netIncome"></td>
         </tr>
-        <tr>
+        <tr class="tax-row">
             <td>Tax</td>
             <td ng-bind="tax.total"></td>
         </tr>

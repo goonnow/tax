@@ -1,58 +1,46 @@
-<h3>TAX : 50000</h3>
-
-<table class="table table-bordered">
+<table class="table table-bordered" ng-controller="SummaryCtrl">
     <thead>
         <tr>
             <th>Items</th>
-            <th>Option</th>
             <th>Baht/Year</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td>Salary</td>
-            <td></td>
-            <td>200000</td>
+            <td ng-bind="items.salary.desc"></td>
+            <td ng-bind="items.salary.value"></td>
         </tr>
         <tr>
-            <td>Bonus</td>
-            <td></td>
-            <td>20000</td>
+            <td ng-bind="items.bonus.desc"></td>
+            <td ng-bind="items.bonus.value"></td>
         </tr>
         <tr>
-            <td>Providend Fund</td>
-            <td></td>
-            <td>20000</td>
+            <td>Total Income</td>
+            <td ng-bind="totalIncome"></td>
         </tr>
         <tr>
-            <td>Expense</td>
-            <td></td>
-            <td>60000</td>
+            <td ng-bind="items.expense.desc"></td>
+            <td ng-bind="items.expense.value"></td>
         </tr>
         <tr>
-            <td>Personal Deduction</td>
-            <td></td>
-            <td>30000</td>
-        </tr>
-        <tr>
-            <td>Parents</td>
-            <td></td>
-            <td>30000</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>Disabled</td>
-            <td>30000</td>
+            <td ng-bind="items.personalDecution.desc"></td>
+            <td ng-bind="items.personalDecution.value"></td>
         </tr>
         <tr>
             <td>LTF</td>
-            <td></td>
-            <td>3000</td>
+            <td ng-bind="items.LTF.value"></td>
         </tr>
         <tr>
-            <td>Total</td>
-            <td></td>
-            <td>5000</td>
+            <td>Total Deduction</td>
+            <td ng-bind="totalDeduction"></td>
+        </tr>
+        <tr>
+            <td>Net Income</td>
+            <td ng-bind="netIncome"></td>
+        </tr>
+        <tr>
+            <td>Tax</td>
+            <td ng-bind="tax.total"></td>
         </tr>
     </tbody>
 </table>

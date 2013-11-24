@@ -26,6 +26,7 @@
       <script src="bower_components/json3/lib/json3.min.js"></script>
     <![endif]-->
     <div class="container">
+        <h1> Tax calculator for single man</h1>
         <ul class="navigation-bar container" ng-controller="NavigationCtrl">
             <li ng-repeat="s in steps" ng-class="{ active : shouldSelect($index)}">
                 <a class="number-bullet" href="#/step/{{$index}}">
@@ -78,9 +79,11 @@
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/tax.js"></script>
         <script src="scripts/app.js"></script>
+        <script src="scripts/items.js"></script>
         <script src="scripts/steps.js"></script>
         <script src="scripts/controllers/step.js"></script>
         <script src="scripts/controllers/navigation.js"></script>
+        <script src="scripts/controllers/summary.js"></script>
         <!-- endbuild -->
 </body>
 </html>

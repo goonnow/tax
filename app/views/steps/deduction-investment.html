@@ -1,14 +1,8 @@
 <form class="form-horizontal">
     <div class="control-group">
-        <label class="control-label">LTF</label>
+        <label class="control-label" ng-bind="items.LTF.desc">LTF</label>
         <div class="controls">
-            <input type="text"  placeholder="20000">
-        </div>
-    </div>
-    <div class="control-group">
-        <label class="control-label">RMF</label>
-        <div class="controls">
-            <input type="text"  placeholder="20000">
+            <input type="text"  placeholder="{{items.LTF.placeholder}}" ng-model="items.LTF.value">
         </div>
     </div>
 </form>
